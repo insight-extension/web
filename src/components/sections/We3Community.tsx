@@ -1,4 +1,5 @@
 import Web3 from "../../assets/images/Insight WEB3 Group 12.png";
+import Mac from "../../assets/images/mac-with-extansion.webp";
 
 import Carousel from "../../assets/images/Group 11.png";
 
@@ -13,7 +14,7 @@ export const Web3Community = () => {
     return (
         <>
             <section className="mt-44" id="features">
-                <div className="container">
+                <div className="container mb-28">
                     <div className="mb-52 flex flex-col-reverse justify-between gap-7 lg:flex-row">
                         <div className="basis-full">
                             <div className="mb-8 md:mb-[280px]">
@@ -79,6 +80,12 @@ export const Web3Community = () => {
                         </div>
                     </div>
                 </div>
+                <img
+                    src={Mac}
+                    alt="Extension"
+                    className="ml-auto max-w-[85%]"
+                    loading="lazy"
+                />
             </section>
         </>
     );

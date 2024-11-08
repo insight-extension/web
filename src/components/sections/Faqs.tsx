@@ -3,24 +3,28 @@ import { Accordion } from "../Accordion";
 const accordions = [
     {
         title: "How does the browser extension work?",
-        description: "1",
+        description:
+            "The extension provides real-time translation content directly in your browser, enabling seamless communication and interaction across multiple languages.",
     },
     {
         title: "What languages are supported?",
         description:
-            "Absolutely. All translations are processed locally on your device, ensuring your data stays private and secure",
+            "We support a wide range of languages, including major global languages like English, Spanish, Chinese, French, and more, with regular updates to add new ones.",
     },
     {
         title: "Is my data safe while using the extension?",
-        description: "3",
+        description:
+            "Yes, your data is secure. The extension does not collect or store any personal information, ensuring your privacy and security.",
     },
     {
         title: "Can I use this on multiple devices?",
-        description: "3",
+        description:
+            "Yes, the extension can be installed and used on multiple devices as long as they support your preferred browser.",
     },
     {
         title: "How accurate are the translations?",
-        description: "3",
+        description:
+            "The translations are powered by advanced AI, providing high accuracy, especially for casual conversations.",
     },
 ];
 export const Faqs = () => {

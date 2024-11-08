@@ -29,7 +29,7 @@ const Plans = [
         id: 43,
         title: "most affordable",
         type: "Special",
-        price: "$1.2",
+        price: "$1.20",
         period: "/hour",
         description:
             "Ideal for regular users looking for more consistent service",

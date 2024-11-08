@@ -4,7 +4,7 @@ import Solana from "../../assets/icons/Solana.svg";
 import Insta from "../../assets/icons/insta.svg";
 import Twitter from "../../assets/icons/twiter.svg";
 import Linked from "../../assets/icons/linked.svg";
-import { useRef, useState } from "react";
+import { useRef, useState, KeyboardEvent, RefObject } from "react";
 import { Button } from "../Button";
 
 export const Footer = () => {
@@ -13,10 +13,13 @@ export const Footer = () => {
     const [email, setEmail] = useState("");
     const [isChecked, setIsChecked] = useState(false);
 
-    const handleKeyDown = (e, nextRef) => {
-        if (e.key === "Enter" && nextRef) {
-            e.preventDefault(); // Prevents form submission
-            nextRef.current.focus(); // Focuses the next input
+    const handleKeyDown = (
+        e: KeyboardEvent,
+        nextRef: RefObject<HTMLElement>
+    ) => {
+        if (e.key === "Enter" && nextRef && nextRef.current) {
+            e.preventDefault();
+            nextRef.current.focus();
         }
     };
 
