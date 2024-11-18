@@ -2,7 +2,7 @@ import { Logo } from "./Logo";
 import { Button } from "./Button";
 import GlobalIcon from "../assets/icons/Global.svg";
 import { NAV_LINKS } from "../configs/route";
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import { WalletMultiButton } from "./WalletButton/WalletMultiButton";
 
 const Nav = () => {
     return (
@@ -22,18 +22,7 @@ const Nav = () => {
                     <div className="flex gap-1">
                         <Button variant="button-white">Download Now</Button>
 
-                        <WalletMultiButton
-                            className="button-dark-border"
-                            style={{
-                                background: "hsl(var(--primary-foreground))",
-                                color: "hsl(var(--primary))",
-                                height: "3rem",
-                                width: "12rem",
-                                fontFamily: "stolzl, sans-serif",
-                                textAlign: "center",
-                                fontWeight: 500,
-                            }}
-                        />
+                        <WalletMultiButton className="button button-dark-border" />
                     </div>
                     <div className="ml-2 grid h-[42px] w-[42px] shrink-0 place-items-center rounded-full bg-white">
                         <img
