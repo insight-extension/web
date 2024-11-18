@@ -2,7 +2,7 @@ import { Logo } from "./Logo";
 import { Button } from "./Button";
 import GlobalIcon from "../assets/icons/Global.svg";
 import { NAV_LINKS } from "../configs/route";
-import { WalletMultiButton } from "./WalletButton/WalletMultiButton";
+import { WalletMultiButton } from "./wallet";
 
 const Nav = () => {
     return (
