@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Logo } from "./Logo";
-import { NAV_LINKS } from "../utils/constants/route";
+import { NAV_LINKS } from "../configs/route";
 import { cn } from "../utils/cn";
 import { Button } from "./Button";
 import GlobalIcon from "../assets/icons/Global.svg";

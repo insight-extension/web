@@ -1,7 +1,8 @@
 import { Logo } from "./Logo";
 import { Button } from "./Button";
 import GlobalIcon from "../assets/icons/Global.svg";
-import { NAV_LINKS } from "../utils/constants/route";
+import { NAV_LINKS } from "../configs/route";
+import { WalletMultiButton } from "./WalletButton/WalletMultiButton";
 
 const Nav = () => {
     return (
@@ -20,9 +21,8 @@ const Nav = () => {
                 <div className="flex items-center">
                     <div className="flex gap-1">
                         <Button variant="button-white">Download Now</Button>
-                        <Button variant="button-dark-border">
-                            Connect Wallet
-                        </Button>
+
+                        <WalletMultiButton className="button button-dark-border" />
                     </div>
                     <div className="ml-2 grid h-[42px] w-[42px] shrink-0 place-items-center rounded-full bg-white">
                         <img

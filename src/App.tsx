@@ -8,6 +8,7 @@ import { Prices } from "./components/sections/Prices";
 import { Faqs } from "./components/sections/Faqs";
 import { Comments } from "./components/sections/Comments";
 import { Footer } from "./components/sections/Footer";
+import { AppWalletProvider } from "./providers/AppWalletProvider";
 
 const Nav = lazy(() => import("./components/Nav"));
 
@@ -17,8 +18,8 @@ function App() {
     const { width } = useWindowSize();
 
     return (
-        <>
-            <Suspense fallback={<div></div>}>
+        <Suspense fallback={<div></div>}>
+            <AppWalletProvider>
                 {width && width > 1023 ? <Nav /> : <NavbarMobileAnimation />}
                 <Hero />
                 <HowItWorks />
@@ -28,8 +29,8 @@ function App() {
                 <Faqs />
                 <Comments />
                 <Footer />
-            </Suspense>
-        </>
+            </AppWalletProvider>
+        </Suspense>
     );
 }
 
